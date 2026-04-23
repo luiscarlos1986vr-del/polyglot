@@ -343,4 +343,4 @@ if __name__ == '__main__':
     # host='0.0.0.0' permite que otros dispositivos en la red se conecten
     # port=5000 es el puerto donde escucha nuestro servidor
     # debug=True hace que el servidor se reinicie automáticamente cuando guardamos cambios
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)

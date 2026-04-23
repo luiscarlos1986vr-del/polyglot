@@ -1,3 +1,4 @@
+
 # 🌍 Polyglot - Asistente de Marketing Multilingüe con IA
 
 **Polyglot** es una aplicación web que genera contenido de marketing localizado para Brasil 🇧🇷, Japón 🇯🇵 y Alemania 🇩🇪. Utiliza tres motores de IA (Deepseek, Mistral y Gemini) para crear posts para redes sociales, emails promocionales y eslóganes publicitarios, adaptando el tono y las referencias culturales a cada país.
@@ -5,9 +6,6 @@
 ---
 
 ## 📋 Requisitos Previos
-
-- Python 3.13 o superior
-- Cuentas en [Deepseek](https://platform.deepseek.com/), [Mistral AI](https://mistral.ai/) y [Google AI Studio](https://aistudio.google.com/) para obtener las API Keys.
 
 ---
 
@@ -23,11 +21,14 @@ cd polyglot
 ### 2. Crear y activar entorno virtual
 
 - **Windows:**
+
   ```bash
   python -m venv venv
   venv\Scripts\activate
   ```
+
 - **Mac/Linux:**
+
   ```bash
   python3 -m venv venv
   source venv/bin/activate
@@ -43,7 +44,7 @@ pip install -r requirements.txt
 
 Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
-```ini
+```env
 DEEPSEEK_API_KEY=tu_clave_de_deepseek
 MISTRAL_API_KEY=tu_clave_de_mistral
 GEMINI_API_KEY=tu_clave_de_gemini
@@ -87,15 +88,20 @@ TIMEOUT=30
 Necesitas **dos terminales** abiertas: una para el backend y otra para el frontend.
 
 1. **Iniciar el servidor backend (API):**
-  ```bash
-   python api.py
-  ```
-   Verás un mensaje indicando que el servidor está corriendo en `http://localhost:5000`.
+
+```bash
+python api.py
+```
+
+Verás un mensaje indicando que el servidor está corriendo en `http://localhost:5000`.
+
 2. **Iniciar la interfaz de usuario (Frontend):**
-  ```bash
-   streamlit run interfaz_polyglot.py
-  ```
-   Se abrirá automáticamente tu navegador en `http://localhost:8501`.
+
+```bash
+streamlit run interfaz_polyglot.py
+```
+
+Se abrirá automáticamente tu navegador en `http://localhost:8501`.
 
 ---
 
@@ -104,16 +110,19 @@ Necesitas **dos terminales** abiertas: una para el backend y otra para el fronte
 El proyecto está configurado para desplegarse en **Render** (backend) y **Streamlit Cloud** (frontend), ambos con planes gratuitos.
 
 1. **Backend (Render):**
-  - Sube tu código a GitHub (sin el archivo `.env`).
-  - Crea un **Web Service** en Render conectado a tu repositorio.
-  - Configura:
-    - **Build Command:** `pip install -r requirements.txt`
-    - **Start Command:** `python api.py`
-    - Añade las variables de entorno con tus API Keys.
+
+- Sube tu código a GitHub (sin el archivo `.env`).
+- Crea un **Web Service** en Render conectado a tu repositorio.
+- Configura:
+  - **Build Command:** `pip install -r requirements.txt`
+  - **Start Command:** `python api.py`
+  - Añade las variables de entorno con tus API Keys.
+
 2. **Frontend (Streamlit Cloud):**
-  - Conecta Streamlit Cloud al mismo repositorio.
-  - Configura el archivo principal como `interfaz_polyglot.py`.
-  - Actualiza la variable `API_URL` en el código con la URL de Render.
+
+- Conecta Streamlit Cloud al mismo repositorio.
+- Configura el archivo principal como `interfaz_polyglot.py`.
+- Actualiza la variable `API_URL` en el código con la URL de Render.
 
 ---
 

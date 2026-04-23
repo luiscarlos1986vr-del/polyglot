@@ -16,8 +16,8 @@
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/luiscarlos1986vr-del/polyglot-app.git
-cd polyglot-app
+git clone https://github.com/luiscarlos1986vr-del/polyglot.git
+cd polyglot
 ```
 
 ### 2. Crear y activar entorno virtual

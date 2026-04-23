@@ -14,8 +14,8 @@ import time  # Time nos permite crear el efecto "máquina de escribir"
 
 # ==================== CONFIGURACIÓN ====================
 # La dirección donde está corriendo nuestra API (el backend)
-#API_URL = "https://polyglot-app-5crh.onrender.com"
-API_URL = "http://localhost:5000"
+API_URL = "https://polyglot-hilos-api.onrender.com"
+#API_URL = "http://localhost:5000"
 
 # Configuramos la página: título, ícono y diseño ancho
 st.set_page_config(

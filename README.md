@@ -141,6 +141,11 @@ El proyecto está configurado para desplegarse en **Render** (backend) y **Strea
 Este proyecto es de uso académico y educativo.
 
 ---
-## 📜 Autores
+## 🔑 Autores
 
 Luis Valencia - Mauro Patiño
+
+---
+## 🌍 WEB:
+
+https://polyglot-vy9kzmcgznfufgdjkdtwxy.streamlit.app/

@@ -139,3 +139,8 @@ El proyecto está configurado para desplegarse en **Render** (backend) y **Strea
 ## 📜 Licencia
 
 Este proyecto es de uso académico y educativo.
+
+---
+## 📜 Autores
+
+Luis Valencia - Mauro Patiño
